@@ -4,7 +4,7 @@
 #
 Name     : R-gtools
 Version  : 3.5.0
-Release  : 28
+Release  : 29
 URL      : http://cran.r-project.org/src/contrib/gtools_3.5.0.tar.gz
 Source0  : http://cran.r-project.org/src/contrib/gtools_3.5.0.tar.gz
 Summary  : Various R Programming Tools
@@ -12,9 +12,7 @@ Group    : Development/Tools
 License  : GPL-2.0
 Requires: R-gtools-lib
 Requires: R-car
-Requires: R-gplots
 BuildRequires : R-car
-BuildRequires : R-gplots
 BuildRequires : clr-R-helpers
 
 %description
@@ -33,11 +31,11 @@ lib components for the R-gtools package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1488814839
+export SOURCE_DATE_EPOCH=1488814986
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1488814839
+export SOURCE_DATE_EPOCH=1488814986
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
