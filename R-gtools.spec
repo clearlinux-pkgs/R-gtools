@@ -4,7 +4,7 @@
 #
 Name     : R-gtools
 Version  : 3.5.0
-Release  : 27
+Release  : 28
 URL      : http://cran.r-project.org/src/contrib/gtools_3.5.0.tar.gz
 Source0  : http://cran.r-project.org/src/contrib/gtools_3.5.0.tar.gz
 Summary  : Various R Programming Tools
@@ -33,11 +33,11 @@ lib components for the R-gtools package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1484539302
+export SOURCE_DATE_EPOCH=1488814839
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1484539302
+export SOURCE_DATE_EPOCH=1488814839
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
