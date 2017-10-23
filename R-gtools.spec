@@ -4,7 +4,7 @@
 #
 Name     : R-gtools
 Version  : 3.5.0
-Release  : 39
+Release  : 40
 URL      : http://cran.r-project.org/src/contrib/gtools_3.5.0.tar.gz
 Source0  : http://cran.r-project.org/src/contrib/gtools_3.5.0.tar.gz
 Summary  : Various R Programming Tools
