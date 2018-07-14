@@ -4,7 +4,7 @@
 #
 Name     : R-gtools
 Version  : 3.8.1
-Release  : 54
+Release  : 55
 URL      : https://cran.r-project.org/src/contrib/gtools_3.8.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/gtools_3.8.1.tar.gz
 Summary  : Various R Programming Tools
@@ -57,11 +57,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1531607228
+export SOURCE_DATE_EPOCH=1531612672
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1531607228
+export SOURCE_DATE_EPOCH=1531612672
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
