@@ -1,10 +1,17 @@
 # This file contains recursive sources that require this package
 R-AER
+R-BayesFactor
+R-BradleyTerry2
 R-DendSer
 R-Ecdat
 R-Ecfun
+R-MLmetrics
+R-PerformanceAnalytics
 R-ROCR
 R-ade4
+R-adegenet
+R-adegraphics
+R-adephylo
 R-analogue
 R-betareg
 R-bipartite
@@ -12,6 +19,7 @@ R-brms
 R-broom
 R-caret
 R-clue
+R-conting
 R-dendextend
 R-drc
 R-dtw
@@ -24,14 +32,20 @@ R-modelr
 R-mvoutlier
 R-partykit
 R-pdfCluster
+R-phangorn
+R-phylobase
+R-phylogram
 R-prabclus
 R-recipes
 R-robCompositions
 R-rstanarm
 R-sem
+R-seqinr
 R-seriation
 R-shinystan
 R-spdep
 R-systemfit
+R-taxize
 R-tidyverse
+R-vcdExtra
 R-vegan
