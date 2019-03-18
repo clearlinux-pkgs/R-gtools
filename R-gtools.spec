@@ -4,14 +4,13 @@
 #
 Name     : R-gtools
 Version  : 3.8.1
-Release  : 62
+Release  : 63
 URL      : https://cran.r-project.org/src/contrib/gtools_3.8.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/gtools_3.8.1.tar.gz
 Summary  : Various R Programming Tools
 Group    : Development/Tools
 License  : GPL-2.0
 Requires: R-gtools-lib = %{version}-%{release}
-Requires: R-car
 BuildRequires : R-SGP
 BuildRequires : R-car
 BuildRequires : R-taxize
@@ -57,10 +56,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552869997
+export SOURCE_DATE_EPOCH=1552876363
 
 %install
-export SOURCE_DATE_EPOCH=1552869997
+export SOURCE_DATE_EPOCH=1552876363
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
