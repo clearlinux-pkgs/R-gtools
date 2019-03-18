@@ -4,14 +4,16 @@
 #
 Name     : R-gtools
 Version  : 3.8.1
-Release  : 61
+Release  : 62
 URL      : https://cran.r-project.org/src/contrib/gtools_3.8.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/gtools_3.8.1.tar.gz
 Summary  : Various R Programming Tools
 Group    : Development/Tools
 License  : GPL-2.0
-Requires: R-gtools-lib
+Requires: R-gtools-lib = %{version}-%{release}
+Requires: R-car
 BuildRequires : R-SGP
+BuildRequires : R-car
 BuildRequires : R-taxize
 BuildRequires : buildreq-R
 
@@ -55,11 +57,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1534129948
+export SOURCE_DATE_EPOCH=1552869997
 
 %install
+export SOURCE_DATE_EPOCH=1552869997
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1534129948
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -94,8 +96,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library gtools|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  gtools || :
 
 
 %files
@@ -123,10 +124,13 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/gtools/help/paths.rds
 /usr/lib64/R/library/gtools/html/00Index.html
 /usr/lib64/R/library/gtools/html/R.css
-/usr/lib64/R/library/gtools/libs/symbols.rds
+/usr/lib64/R/library/gtools/tests/smartbind_Dates.R
+/usr/lib64/R/library/gtools/tests/smartbind_emptynames.R
+/usr/lib64/R/library/gtools/tests/test_binsearch.R
+/usr/lib64/R/library/gtools/tests/test_ddirichlet.R
+/usr/lib64/R/library/gtools/tests/test_mixedorder.R
+/usr/lib64/R/library/gtools/tests/test_setTCPNoDelay.R
 
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/R/library/gtools/libs/gtools.so
-/usr/lib64/R/library/gtools/libs/gtools.so.avx2
-/usr/lib64/R/library/gtools/libs/gtools.so.avx512
