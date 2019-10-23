@@ -1,11 +1,14 @@
 # This file contains recursive sources that require this package
 R-BayesFactor
 R-BradleyTerry2
-R-ROCR
+R-PerformanceAnalytics
 R-SGP
 R-conting
+R-dendextend
 R-drc
 R-gdata
 R-gplots
-R-seriation
+R-phytools
 R-shinystan
+R-spdep
+R-vcdExtra
