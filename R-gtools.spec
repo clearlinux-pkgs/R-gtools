@@ -4,19 +4,13 @@
 #
 Name     : R-gtools
 Version  : 3.8.2
-Release  : 73
+Release  : 74
 URL      : https://cran.r-project.org/src/contrib/gtools_3.8.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/gtools_3.8.2.tar.gz
 Summary  : Various R Programming Tools
 Group    : Development/Tools
 License  : GPL-2.0
 Requires: R-gtools-lib = %{version}-%{release}
-Requires: R-SGP
-Requires: R-car
-Requires: R-taxize
-BuildRequires : R-SGP
-BuildRequires : R-car
-BuildRequires : R-taxize
 BuildRequires : buildreq-R
 
 %description
@@ -53,21 +47,22 @@ lib components for the R-gtools package.
 
 %prep
 %setup -q -c -n gtools
+cd %{_builddir}/gtools
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1585692707
+export SOURCE_DATE_EPOCH=1589398368
 
 %install
-export SOURCE_DATE_EPOCH=1585692707
+export SOURCE_DATE_EPOCH=1589398368
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
