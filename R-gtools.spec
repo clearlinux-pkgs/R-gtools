@@ -4,7 +4,7 @@
 #
 Name     : R-gtools
 Version  : 3.8.2
-Release  : 81
+Release  : 82
 URL      : https://cran.r-project.org/src/contrib/gtools_3.8.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/gtools_3.8.2.tar.gz
 Summary  : Various R Programming Tools
