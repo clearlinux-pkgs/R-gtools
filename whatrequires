@@ -1,5 +1,4 @@
 # This file contains recursive sources that require this package
-R-BayesFactor
 R-BradleyTerry2
 R-SGP
 R-conting
